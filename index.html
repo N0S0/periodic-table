@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- あとで本番用CDN Vueに変える -->
+    <script defer src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="main.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>periodic table</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>周期表暗記アプリ</h1>
+      <div id="app">
+        <div class="randomCheck">
+          <label for="random"><input type="checkbox" v-model="random" id="random" />：ランダムモード</label>
+        </div>
+        <div v-if="elements[an]" class="pt">
+          <div>{{ elements[an]['atomicNumber'] }}</div>
+          <div>{{ elements[an]['elementSymbol'] }}</div>
+          <div>{{ elements[an]['ja'] }}</div>
+          <div>{{ elements[an]['en'] }}</div>
+          <div>{{ elements[an]['atomicWeight'] }}</div>
+          <div>{{ elements[an]['group'] }}</div>
+        </div>
+        <div class="button">
+          <button v-on:click="prev">前へ</button>
+          <button v-on:click="next">次へ</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of container -->
+  </body>
+</html>

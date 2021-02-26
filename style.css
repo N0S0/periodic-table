@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin: 0 auto;
+  width: auto;
+}
+.randomCheck{
+  margin: 0 auto;
+  width: fit-content;
+}
+.pt{
+  margin: 0 auto;
+  padding: 3%;
+  border: 1px solid #333;
+  width: 400px;
+}
+.button{
+  margin: 0 auto;
+  padding: 3%;
+  width: fit-content;
+}
