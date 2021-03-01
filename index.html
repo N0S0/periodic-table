@@ -28,25 +28,26 @@
             <input type="checkbox" v-model="random" id="random"/>：ランダムモード</label>
         </div><!-- end of randomCheck -->
 
+
         <div v-if="elements[an]" class="pt">
-          <div>原子番号：{{ elements[an]['atomicNumber'] }}</div>
+          <div>　原子番号：{{ elements[an]['atomicNumber'] }}</div>
           <label for="elementSymbol">
             <input type="checkbox" v-model="hide1" id="elementSymbol">元素記号：
           </label>
           <span v-show="hide1">{{ elements[an]['elementSymbol'] }}</span>
 
           <br><label for="ja">
-            <input type="checkbox" v-model="hide2" id="ja">和名：
+            <input type="checkbox" v-model="hide2" id="ja">和名　　：
           </label>
           <span v-show="hide2">{{ elements[an]['ja'] }}</span>
 
           <br><label for="en">
-            <input type="checkbox" v-model="hide3" id="en">英名：
+            <input type="checkbox" v-model="hide3" id="en">英名　　：
           </label>
           <span v-show="hide3">{{ elements[an]['en'] }}</span>
 
           <br><label for="atomicWeight">
-            <input type="checkbox" v-model="hide4" id="atomicWeight">原子量：
+            <input type="checkbox" v-model="hide4" id="atomicWeight">原子量　：
           </label>
           <span v-show="hide4">{{ elements[an]['atomicWeight'] }}</span>
 
@@ -55,6 +56,7 @@
           </label>
           <span v-show="hide5">{{ elements[an]['group'] }}</span>
         </div>
+
         <div class="button">
           <button v-on:click="prev">前へ</button>
           <button v-on:click="next">次へ</button>
