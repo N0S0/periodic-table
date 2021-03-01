@@ -1,6 +1,6 @@
 [
   {
-    "atomicNumber":"1",
+    "atomicNumber": "1",
     "elementSymbol": "H",
     "ja": "水素",
     "en": "Hydrogen",
@@ -8,7 +8,7 @@
     "group": "非金属元素"
   },
   {
-    "atomicNumber":"2",
+    "atomicNumber": "2",
     "elementSymbol": "He",
     "ja": "ヘリウム",
     "en": "Helium",
@@ -16,7 +16,7 @@
     "group": "希ガス"
   },
   {
-    "atomicNumber":"3",
+    "atomicNumber": "3",
     "elementSymbol": "Li",
     "ja": "リチウム",
     "en": "Lithium",
@@ -24,7 +24,7 @@
     "group": "アルカリ金属元素"
   },
   {
-    "atomicNumber":"4",
+    "atomicNumber": "4",
     "elementSymbol": "Be",
     "ja": "ベリリウム",
     "en": "Beryllium",
@@ -32,7 +32,7 @@
     "group": "アルカリ土類金属"
   },
   {
-    "atomicNumber":"5",
+    "atomicNumber": "5",
     "elementSymbol": "B",
     "ja": "ホウ素",
     "en": "Boron",
@@ -40,7 +40,7 @@
     "group": "半金属元素"
   },
   {
-    "atomicNumber":"6",
+    "atomicNumber": "6",
     "elementSymbol": "C",
     "ja": "炭素",
     "en": "Carbon",
@@ -48,7 +48,7 @@
     "group": "非金属元素"
   },
   {
-    "atomicNumber":"7",
+    "atomicNumber": "7",
     "elementSymbol": "N",
     "ja": "窒素",
     "en": "Nitrogen",
@@ -56,7 +56,7 @@
     "group": "非金属元素"
   },
   {
-    "atomicNumber":"8",
+    "atomicNumber": "8",
     "elementSymbol": "O",
     "ja": "酸素",
     "en": "Oxygen",
@@ -64,7 +64,7 @@
     "group": "非金属元素"
   },
   {
-    "atomicNumber":"9",
+    "atomicNumber": "9",
     "elementSymbol": "F",
     "ja": "フッ素",
     "en": "Fluorine",
@@ -72,7 +72,7 @@
     "group": "ハロゲン"
   },
   {
-    "atomicNumber":"10",
+    "atomicNumber": "10",
     "elementSymbol": "Ne",
     "ja": "ネオン",
     "en": "Neon",

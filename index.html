@@ -7,7 +7,10 @@
 
     <!-- あとで本番用CDN Vueに変える -->
     <script defer src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
     <script defer src="main.js"></script>
 
     <!-- CSS -->
@@ -17,24 +20,46 @@
   <body>
     <div class="container">
       <h1>周期表暗記アプリ</h1>
+      <p>※すみません。作者の怠惰により原子番号10ネオンまでのお試しとなります。
+      </p>
       <div id="app">
         <div class="randomCheck">
-          <label for="random"><input type="checkbox" v-model="random" id="random" />：ランダムモード</label>
-        </div>
+          <label for="random">
+            <input type="checkbox" v-model="random" id="random"/>：ランダムモード</label>
+        </div><!-- end of randomCheck -->
+
         <div v-if="elements[an]" class="pt">
-          <div>{{ elements[an]['atomicNumber'] }}</div>
-          <div>{{ elements[an]['elementSymbol'] }}</div>
-          <div>{{ elements[an]['ja'] }}</div>
-          <div>{{ elements[an]['en'] }}</div>
-          <div>{{ elements[an]['atomicWeight'] }}</div>
-          <div>{{ elements[an]['group'] }}</div>
+          <div>原子番号：{{ elements[an]['atomicNumber'] }}</div>
+          <label for="elementSymbol">
+            <input type="checkbox" v-model="hide1" id="elementSymbol">元素記号：
+          </label>
+          <span v-show="hide1">{{ elements[an]['elementSymbol'] }}</span>
+
+          <br><label for="ja">
+            <input type="checkbox" v-model="hide2" id="ja">和名：
+          </label>
+          <span v-show="hide2">{{ elements[an]['ja'] }}</span>
+
+          <br><label for="en">
+            <input type="checkbox" v-model="hide3" id="en">英名：
+          </label>
+          <span v-show="hide3">{{ elements[an]['en'] }}</span>
+
+          <br><label for="atomicWeight">
+            <input type="checkbox" v-model="hide4" id="atomicWeight">原子量：
+          </label>
+          <span v-show="hide4">{{ elements[an]['atomicWeight'] }}</span>
+
+          <br><label for="group">
+            <input type="checkbox" v-model="hide5" id="group">
+          </label>
+          <span v-show="hide5">{{ elements[an]['group'] }}</span>
         </div>
         <div class="button">
           <button v-on:click="prev">前へ</button>
           <button v-on:click="next">次へ</button>
         </div>
       </div>
-    </div>
-    <!-- end of container -->
+    </div><!-- end of container -->
   </body>
 </html>
